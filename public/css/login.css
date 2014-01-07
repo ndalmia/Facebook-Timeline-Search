@@ -1,0 +1,39 @@
+#loginbox{
+	width: 500px;
+	height: 225px;
+	margin-top:50px;
+	margin-left:30%;
+}
+
+#loginboxheader
+{	
+	text-align:center;
+	font-family:Avant Garde;
+	color:#505050;
+	width:500px;
+	letter-spacing:2px;
+	word-spacing:6px;
+}
+#loginform
+{
+	margin-left:90px;
+	margin-top:40px;
+	width:300px;
+	font-size:19px;
+}
+#loginform p input
+{
+	float:right;
+}
+
+#loginformbutton
+{
+	margin-top:50px;
+	margin-left:120px;
+}
+	
+#loginhome
+{
+	margin-top:40px;
+	margin-right:60px;
+}

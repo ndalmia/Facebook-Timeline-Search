@@ -1,0 +1,26 @@
+<div id="loginhome" align="right">
+	<a class="button" id="registerhome" href="/">Home</a>
+</div>
+
+
+<div id="registerbox">
+	<div id="registerboxheader">
+		<h1> Step1: Share Your Profile</h1>
+	</div>
+	<div id="registerform">
+		<form enctype="multipart/form-data" method="POST" action="/register1" name="registerform" onsubmit='return checkregisterstep1()'>
+		<div class="errmsg" id="registererrormsg" style="display:none;"></div>
+			<p>Profile <input type="file" name="file1"></p>
+			<p>Friend <input type="file" name="file2"><select name="file2select"><option value="friends">Friends</option><option value="public">Public</option><option value="only me">Only Me</option></select></p>
+			<p>Friend Request <input type="file" name="file3"><select name="file3select"><option value="only me">Only Me</option><option value="public">Public</option><option value="friends">Friends</option></select></p>
+			<p>Events <input type="file" name="file4"><select  name="file4select"><option value="public">Public</option><option value="only me">Only Me</option><option value="friends">Friends</option></select></p>
+			<p>Profile Pic <input type="file" name="file5">
+			<p>Album1 <input type="file" name="file6"></p>
+			<p>Album2 <input type="file" name="file7">
+			<p>Album3 <input type="file" name="file8">
+			<p>Wall <input type="file" name="file9"><select  name="file9select"><option value="public">Public</option><option value="only me">Only Me</option><option value="friends">Friends</option></select></p>
+			<p>Photos( zipped ) <input type="file" name="file10"><select  name="file10select"><option value="public">Public</option><option value="only me">Only Me</option><option value="friends">Friends</option></select></p>
+			<button class="button" id="registerformbutton" type="submit">Submit</button>		
+		</form>
+	</div>
+</div>

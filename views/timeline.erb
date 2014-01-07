@@ -1,0 +1,40 @@
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var quickSearch = getURLParameter("q");
+		if(quickSearch!=null)
+		{
+			$('#searchinput').val(quickSearch);
+			highlightTermsIn($("ul#container"), parseSearchTerms(quickSearch));
+		}
+		$.filtrify("container", "placeHolder",{close :true });
+	});     
+</script>
+
+
+<div id="timelinebuttons" align="right">
+	<a class="button" href="/edit">Edit Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="button" href="/logout">Logout</a>
+</div>
+
+<div id="top">
+	<div id="profile">
+		<img src=<%= profilepic %> /><p><%= name %></p>
+	</div>
+	
+	<div id="searchboxfilter">
+		<div id="searchbox">
+			<form id="searchform" method="GET">
+				<input type="text" name="q" id="searchinput" >
+				<button class="button" type="submit" >Search</button>
+			</form>
+		</div>
+		
+		<div id="placeHolder"></div>
+		
+		<ul id="container">
+			<%= content %>
+		</ul>
+	</div>
+</div>
+

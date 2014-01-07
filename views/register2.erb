@@ -1,0 +1,31 @@
+<div id="loginhome" align="right">
+	<a class="button" id="registerhome" href="/">Home</a>
+</div>
+
+
+<div id="registerbox">
+	<div id="registerboxheader">
+		<h1> Step1: Share Your Profile</h1>
+	</div>
+	<div id="registerform">
+			<div id="spinner" class="spinner" style="display:none;">
+			<div class="loader-msg">
+				Please Wait..
+			</div>
+		</div>
+		<form enctype="multipart/form-data" method="POST" action="/register1" name="registerform" onsubmit='return checkregisterstep1()'>
+		<div class="errmsg" id="registererrormsg" style="display:block;">User Already Exists.</div>
+			<p>Profile <input type="file" name="file1"></p>
+			<p>Friend <input type="file" name="file2"></p>
+			<p>Friend Request <input type="file" name="file3"></p>
+			<p>Events <input type="file" name="file4"></p>
+			<p>Profile Pic <input type="file" name="file5"></p>
+			<p>Album1 <input type="file" name="file6"></p>
+			<p>Album2 <input type="file" name="file7"></p>
+			<p>Album3 <input type="file" name="file8"></p>
+			<p>Wall <input type="file" name="file9"></p>
+			<p>Photos( zipped ) <input type="file" name="file10"></p>
+			<button class="button" id="registerformbutton" type="submit">Submit</button>		
+		</form>
+	</div>
+</div>

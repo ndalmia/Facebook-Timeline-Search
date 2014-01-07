@@ -1,0 +1,65 @@
+#registerbox{
+	width: 500px;
+	height: 225px;
+	margin-top:30px;
+	margin-left:30%;
+}
+
+#registerboxheader
+{	
+	text-align:center;
+	font-family:Avant Garde;
+	color:#505050;
+	width:500px;
+	letter-spacing:2px;
+	word-spacing:6px;
+}
+#registerform
+{
+	margin-left:50px;
+	margin-top:40px;
+	width:480px;
+	font-size:19px;
+}
+#registerpasswordform
+{
+	margin-left:70px;
+	margin-top:40px;
+	width:380px;
+	font-size:19px;
+}
+#registerform p input
+{
+	float:right;
+}
+#registerform p select
+{
+	margin-right:20px;
+	float:right;
+		border: 1px solid #CCC;
+		font-family: tahoma,verdana,arial,sans-serif;
+	}
+#registerpasswordform p input
+{
+	float:right;
+}
+
+#registerformbutton
+{
+	margin-right:157px;
+	margin-top:20px;
+	float:right;
+}
+	
+#registerformpasswordbutton
+{
+	margin-right:20px;
+	margin-top:20px;
+	float:right;
+}
+
+#registerhome
+{
+	margin-top:40px;
+	margin-right:60px;
+}

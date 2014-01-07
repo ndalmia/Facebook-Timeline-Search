@@ -1,0 +1,171 @@
+#timelinebuttons
+{
+	margin-top:40px;
+	margin-right:60px;
+}
+
+#profile
+{
+	float:left;
+	display:inline-block;
+	width:200px;
+	margin-left:3%;
+	text-align:center;
+}
+
+#searchboxfilter
+{
+	display:inline-block;
+	margin-left:100px;
+	width:600px;
+	height:200px;
+}
+#profile p
+{
+	font-family: Palatino, Georgia, serif;
+color: #2e2d2e;
+	font-size:20px;
+text-align:center;
+word-spacing:5px;
+margin-top:4px;
+}
+
+#searchinput
+{
+	width:475px;
+	height:20px;
+	padding:2px;
+	margin-top:50px;
+	margin-right:20px;
+}
+
+#placeHolder
+{
+	margin-top:50px;
+	width:586px;
+	height:auto;
+		background:#e6e3e6 url(../img/bg-main.png) repeat 0 0;
+	 box-shadow: 0px 1px 5px #999999;
+}
+
+#container li
+{
+    border-top:1px solid #bdb9bd;
+    margin-top:20px;
+    padding:10px;
+}
+
+#container
+{
+    margin-left:-40px;
+    list-style-type:none;
+}
+
+#container li:last-child
+{
+    border-bottom:1px solid #bdb9bd;
+}
+
+.liheader
+{
+	font-family: Consolas, Monaco, "Ubuntu Mono", monospace;
+font-size: 18px;
+color: #75484b;
+}
+
+.lidescription
+{
+    margin-top:8px;
+    font-size:17px;
+    word-spacing:1px;
+	    color: #394b52;
+    font-weight: bold;
+}
+
+.liimglink
+{
+	margin-top:10px;
+}
+
+.liphotoimg img {
+    margin-top: 10px;
+	width:auto;
+	height:auto;
+	max-width:720px;
+	max-height:400px;
+}
+
+.lilike
+{
+	color: #5a5d70;
+font-family: Consolas, Monaco, "Ubuntu Mono", monospace;
+font-weight: bold;
+background-color: #e2e6d6;
+padding:5px;
+margin-top:10px;
+    margin-bottom:8px;
+	}
+	
+.licomment {
+    color: #5a5d70;
+    font-family: Consolas, Monaco, "Ubuntu Mono", monospace;
+    background-color: #e2e6d6;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.litime {
+    font-size: 14px;
+    color: #a3a699;
+    margin-top:5px;
+}
+
+.lititle
+{
+	word-spacing: 5px;
+letter-spacing: 2px;
+margin-top: 10px;
+font-weight: bold;
+
+}
+
+.highlight {
+background-color: yellow;
+}
+#privacybox{
+	width: 430px;
+	height: 225px;
+	margin-top:70px;
+	margin-left:400px;
+}
+
+#privacyboxheader
+{	
+	text-align:center;
+	font-family:Avant Garde;
+	color:#505050;
+	width:500px;
+	letter-spacing:2px;
+	word-spacing:6px;
+}
+#privacyform
+{
+	margin-top:40px;
+	margin-left:115px;
+	font-size:19px;
+}
+
+#privacyform p select
+{
+	margin-right:60px;
+	float:right;
+		border: 1px solid #CCC;
+		font-family: tahoma,verdana,arial,sans-serif;
+	}
+	
+#privacybutton
+{
+	float:right;
+	margin-top:15px;
+	margin-right:60px;
+	}

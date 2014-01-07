@@ -1,0 +1,63 @@
+<div id="timelinebuttons" align="right">
+	<a class="button" href="/">Timeline Search</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="button" href="/logout">Logout</a>
+</div>
+
+<div id="top">
+	<div id="spinner" class="spinner" style="display:none;">
+		<div class="loader-msg">
+			Please Wait..
+		</div>
+	</div>
+	<div id="profile">
+		<img src=<%= profilepic %> /><p><%= name %></p>
+	</div>
+	<div id="privacybox">
+		
+		<div id="privacyboxheader">
+			<h1>Edit Your Privacy</h1>
+		</div>
+		<div id="privacyform">
+			<form onsubmit='return false;' name="privacyform" id="pform">
+				<p>Friends <% if friends == "public" then %>
+				<select name="friends"><option value="public">Public</option><option value="friends">Friends</option><option value="only me">Only Me</option></select></p>
+				<% elsif pending =="only me" %>
+				<select name="friends"><option value="only me">Only Me</option><option value="public">Public</option><option value="friends">Friends</option></select>
+				<% else %>
+				<select name="friends"><option value="friends">Friends</option><option value="public">Public</option><option value="only me">Only Me</option></select>
+				<% end %>
+			</p>
+				<p>Pending Requests <% if pending == "public" then %>
+				<select name="pending"><option value="public">Public</option><option value="friends">Friends</option><option value="only me">Only Me</option></select></p>
+				<% elsif pending =="only me" %>
+				<select name="pending"><option value="only me">Only Me</option><option value="public">Public</option><option value="friends">Friends</option></select>
+				<% else %>
+				<select name="pending"><option value="friends">Friends</option><option value="public">Public</option><option value="only me">Only Me</option></select>
+				<% end %>
+			</p>
+			<p>Posts <% if posts == "public" then %>
+			<select name="posts"><option value="public">Public</option><option value="friends">Friends</option><option value="only me">Only Me</option></select></p>
+			<% elsif posts =="only me" %>
+			<select name="posts"><option value="only me">Only Me</option><option value="public">Public</option><option value="friends">Friends</option></select>
+			<% else %>
+			<select name="posts"><option value="friends">Friends</option><option value="public">Public</option><option value="only me">Only Me</option></select>
+			<% end %>
+			</p><p>Events <% if events == "public" then %>
+		<select name="events"><option value="public">Public</option><option value="friends">Friends</option><option value="only me">Only Me</option></select></p>
+		<% elsif events =="only me" %>
+		<select name="events"><option value="only me">Only Me</option><option value="public">Public</option><option value="friends">Friends</option></select>
+		<% else %>
+		<select name="events"><option value="friends">Friends</option><option value="public">Public</option><option value="only me">Only Me</option></select>
+		<% end %>
+		</p><p>Photos <% if photos == "public" then %>
+	<select name="photos"><option value="public">Public</option><option value="friends">Friends</option><option value="only me">Only Me</option></select></p>
+	<% elsif photos =="only me" %>
+	<select name="photos"><option value="only me">Only Me</option><option value="public">Public</option><option value="friends">Friends</option></select>
+	<% else %>
+	<select name="photos"><option value="friends">Friends</option><option value="public">Public</option><option value="only me">Only Me</option></select>
+	<% end %>
+</p><div id="privacysuccessmsg" class="successmsg"></div><button class="button" id="privacybutton" type="submit">Submit</button>	
+</form>
+</div>
+</div>
+</div>
